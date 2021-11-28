@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_Background"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/padding_XX_Large"
+    tools:paddingTop="0dp"
+    tools:context=".fragment.DeviceDataFragment">
+
+    <!--Toolbar-->
+    <include
+        layout="@layout/layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <!--Content-->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refresh.Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_X_Large">
+
+            <!--Pulse Rate-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_Medium"
+                android:layout_marginTop="@dimen/margin_Small"
+                android:layout_marginEnd="@dimen/margin_Medium"
+                android:layout_marginBottom="@dimen/margin_Small"
+                app:cardBackgroundColor="@color/colorWhite"
+                app:cardCornerRadius="@dimen/radius_Large"
+                app:cardElevation="@dimen/card_Elevation_Small">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_X_Large">
+
+                    <!--Pulse Rate - Icon-->
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="@dimen/_48sdp"
+                        android:layout_marginEnd="@dimen/margin_Large"
+                        app:lottie_autoPlay="true"
+                        app:lottie_colorFilter="@color/colorAccent"
+                        app:lottie_fileName="lottie/pulse.json"
+                        app:lottie_loop="true" />
+
+                    <!--Pulse Rate - Content-->
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <!--Pulse Rate - Title-->
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_X_Small"
+                            android:text="@string/pulseRate"
+                            android:textColor="@color/font_Color_Accent"
+                            android:textSize="@dimen/text_Size_Small"
+                            android:textStyle="bold" />
+
+                        <!--Pulse Rate - Details-->
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <!--Pulse Rate - Value-->
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/pulseRate.Value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_marginEnd="@dimen/margin_Small"
+                                android:text="@string/zero"
+                                android:textColor="@color/font_Color_Dark"
+                                android:textSize="@dimen/text_Size_Large" />
+
+                            <!--Pulse Rate - Unit-->
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top"
+                                android:layout_marginTop="@dimen/margin_X_Small"
+                                android:text="@string/bpm"
+                                android:textColor="@color/font_Color_Dark"
+                                android:textSize="@dimen/text_Size_Small" />
+
+                            <!--Pulse Rate Status-->
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/pulseRate.Status"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:alpha=".75"
+                                android:gravity="end"
+                                android:text="@string/normal"
+                                android:textColor="@color/font_Color_Dark"
+                                android:textSize="@dimen/text_Size_Small" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <!--Last Pulse Rate-->
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/pulseRate.Last"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_marginTop="@dimen/margin_Small"
+                            android:alpha=".75"
+                            android:textColor="@color/font_Color_Dark"
+                            android:textSize="@dimen/text_Size_XX_Small"
+                            tools:text="0 bpm" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Oxygen Saturation-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_Medium"
+                android:layout_marginTop="@dimen/margin_Small"
+                android:layout_marginEnd="@dimen/margin_Medium"
+                android:layout_marginBottom="@dimen/margin_Small"
+                app:cardBackgroundColor="@color/colorWhite"
+                app:cardCornerRadius="@dimen/radius_Large"
+                app:cardElevation="@dimen/card_Elevation_Small">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_X_Large">
+
+                    <!--Oxygen Saturation - Icon-->
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="@dimen/_64sdp"
+                        android:layout_height="@dimen/_48sdp"
+                        android:layout_marginStart="@dimen/_minus8sdp"
+                        android:layout_marginEnd="@dimen/margin_Small"
+                        app:lottie_autoPlay="true"
+                        app:lottie_colorFilter="@color/colorAccent"
+                        app:lottie_fileName="lottie/oxygen.json"
+                        app:lottie_loop="true" />
+
+                    <!--Oxygen Saturation - Details-->
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <!--Oxygen Saturation - Title-->
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_X_Small"
+                            android:text="@string/oxygenSaturation"
+                            android:textColor="@color/font_Color_Accent"
+                            android:textSize="@dimen/text_Size_Small"
+                            android:textStyle="bold" />
+
+                        <!--Oxygen Saturation - Content-->
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <!--Oxygen Saturation - Value-->
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/oxygenSaturation.Value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_marginEnd="@dimen/margin_Small"
+                                android:text="@string/zero"
+                                android:textColor="@color/font_Color_Dark"
+                                android:textSize="@dimen/text_Size_Large" />
+
+                            <!--Oxygen Saturation - Unit-->
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top"
+                                android:layout_marginTop="@dimen/margin_X_Small"
+                                android:text="@string/percent"
+                                android:textColor="@color/font_Color_Dark"
+                                android:textSize="@dimen/text_Size_Small" />
+
+                            <!--Oxygen Saturation - Status-->
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/oxygenSaturation.Status"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:alpha=".75"
+                                android:gravity="end"
+                                android:text="@string/normal"
+                                android:textColor="@color/font_Color_Dark"
+                                android:textSize="@dimen/text_Size_Small" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <!--Last Oxygen Saturation-->
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/oxygenSaturation.Last"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_marginTop="@dimen/margin_Small"
+                            android:alpha=".75"
+                            android:textColor="@color/font_Color_Dark"
+                            android:textSize="@dimen/text_Size_XX_Small"
+                            tools:text="0 %" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--ECG-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_Medium"
+                android:layout_marginTop="@dimen/margin_Small"
+                android:layout_marginEnd="@dimen/margin_Medium"
+                android:layout_marginBottom="@dimen/margin_Small"
+                app:cardBackgroundColor="@color/colorWhite"
+                app:cardCornerRadius="@dimen/radius_Large"
+                app:cardElevation="@dimen/card_Elevation_Small">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_X_Large">
+
+                    <!--ECG - Icon-->
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="@dimen/_48sdp"
+                        android:layout_marginEnd="@dimen/margin_Large"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="lottie/ecg.json"
+                        app:lottie_loop="true" />
+
+                    <!--ECG - Content-->
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <!--ECG - Title-->
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_X_Small"
+                            android:text="@string/ecg"
+                            android:textColor="@color/font_Color_Accent"
+                            android:textSize="@dimen/text_Size_Small"
+                            android:textStyle="bold" />
+
+                        <!--ECG - Details-->
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <!--ECG - Value-->
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/ecg.Value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_marginEnd="@dimen/margin_Small"
+                                android:text="@string/zero"
+                                android:textColor="@color/font_Color_Dark"
+                                android:textSize="@dimen/text_Size_Large" />
+
+                            <!--ECG - Unit-->
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top"
+                                android:layout_marginTop="@dimen/margin_X_Small"
+                                android:text="@string/millisecondSymbol"
+                                android:textColor="@color/font_Color_Dark"
+                                android:textSize="@dimen/text_Size_Small" />
+
+                            <!--ECG - Status-->
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/ecg.Status"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:alpha=".75"
+                                android:gravity="end"
+                                android:text="@string/normal"
+                                android:textColor="@color/font_Color_Dark"
+                                android:textSize="@dimen/text_Size_Small" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <!--Last ECG-->
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/ecg.Last"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_marginTop="@dimen/margin_Small"
+                            android:alpha=".75"
+                            android:textColor="@color/font_Color_Dark"
+                            android:textSize="@dimen/text_Size_XX_Small"
+                            tools:text="0 ms" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Body Temperature-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_Medium"
+                android:layout_marginTop="@dimen/margin_Small"
+                android:layout_marginEnd="@dimen/margin_Medium"
+                android:layout_marginBottom="@dimen/margin_Small"
+                app:cardBackgroundColor="@color/colorWhite"
+                app:cardCornerRadius="@dimen/radius_Large"
+                app:cardElevation="@dimen/card_Elevation_Small">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_X_Large">
+
+                    <!--Body Temperature - Icon-->
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="@dimen/_48sdp"
+                        android:layout_marginEnd="@dimen/margin_Large"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="lottie/temperature.json"
+                        app:lottie_loop="true" />
+
+                    <!--Body Temperature - Content-->
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <!--Body Temperature - Title-->
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_X_Small"
+                            android:text="@string/bodyTemperature"
+                            android:textColor="@color/font_Color_Accent"
+                            android:textSize="@dimen/text_Size_Small"
+                            android:textStyle="bold" />
+
+                        <!--Body Temperature - Details-->
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <!--Body Temperature - Value-->
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/bodyTemperature.Value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_marginEnd="@dimen/margin_Small"
+                                android:text="@string/zero"
+                                android:textColor="@color/font_Color_Dark"
+                                android:textSize="@dimen/text_Size_Large" />
+
+                            <!--Body Temperature - Unit-->
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top"
+                                android:layout_marginTop="@dimen/margin_X_Small"
+                                android:text="@string/degreeFerSymbol"
+                                android:textColor="@color/font_Color_Dark"
+                                android:textSize="@dimen/text_Size_Small" />
+
+                            <!--Body Temperature - Status-->
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/bodyTemperature.Status"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:alpha=".75"
+                                android:gravity="end"
+                                android:text="@string/normal"
+                                android:textColor="@color/font_Color_Dark"
+                                android:textSize="@dimen/text_Size_Small" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <!--Last Temperature-->
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/bodyTemperature.Last"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_marginTop="@dimen/margin_Small"
+                            android:alpha=".75"
+                            android:textColor="@color/font_Color_Dark"
+                            android:textSize="@dimen/text_Size_XX_Small"
+                            tools:text="0 F" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

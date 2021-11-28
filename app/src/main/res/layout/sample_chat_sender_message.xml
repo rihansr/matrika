@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_XXXXXXX_Large"
+    android:paddingTop="@dimen/padding_XX_Small"
+    android:paddingBottom="@dimen/padding_XX_Small"
+    android:orientation="vertical"
+    tools:context=".adapter.ChatGroupAdapter">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--Message-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/sender.Message.Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@drawable/shape_sender_message"
+            android:paddingTop="@dimen/padding_Medium"
+            android:paddingStart="@dimen/padding_Large"
+            android:paddingEnd="@dimen/padding_Large"
+            android:paddingBottom="@dimen/padding_Medium"
+            tools:text="Message, bla bla blaa"
+            android:textSize="@dimen/text_Size_X_Small"
+            android:textColor="@color/colorSmokeWhite"
+            android:fontFamily="@font/oxanium_regular"
+            android:visibility="visible"/>
+
+        <!--Files-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sender.Files.Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="@dimen/radius_Large"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sender.Files.Rcv"
+                style="@style/RecyclerViewStyle.Grid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_minus1sdp"
+                android:layout_marginTop="@dimen/_minus1sdp"
+                android:layout_marginBottom="@dimen/_minus1sdp"
+                android:layout_marginStart="@dimen/_minus1sdp"
+                app:spanCount="2"
+                tools:listitem="@layout/sample_photo_grid_2"
+                tools:itemCount="4"
+                android:nestedScrollingEnabled="false"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <!--Time-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:gravity="center_vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/sender.SentAt.Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="5:30 Am"
+                android:layout_marginTop="@dimen/margin_X_Small"
+                android:layout_marginBottom="@dimen/margin_X_Small"
+                android:textSize="@dimen/text_Size_XXXX_Small"
+                android:textColor="@color/font_Color_Gray"
+                android:fontFamily="@font/oxanium_regular"
+                android:visibility="gone"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_Small"
+                android:layout_marginTop="@dimen/margin_X_Small"
+                android:layout_marginBottom="@dimen/margin_X_Small"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_chat_seen"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:id="@+id/sender.Divider.View"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_4sdp"
+        android:visibility="gone"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

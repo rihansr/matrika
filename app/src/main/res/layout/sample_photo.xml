@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/padding_XX_Small"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/photo.Holder.Iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxHeight="@dimen/_224sdp"
+        android:background="@color/colorSmokeWhite"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/ic_placeholder_large"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

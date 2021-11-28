@@ -1,0 +1,424 @@
+<resources>
+
+    <!--Title-->
+    <string name="app_name">Matrika</string>
+    <string name="teleMedicine">Telemedicine App</string>
+    <string name="next">Next</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="send">Send</string>
+    <string name="submit">Submit</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="confirm">Confirm</string>
+    <string name="signOut">Sign Out</string>
+    <string name="share">Share</string>
+    <string name="bookAppointment">Book Appointment</string>
+    <string name="forgotPassword">Forgot password?</string>
+    <string name="currentLocation">Use Current Location</string>
+    <string name="phoneTitle">Phone</string>
+    <string name="nameTitle">Full Name</string>
+    <string name="emailTitle">Email</string>
+    <string name="genderTitle">Sex</string>
+    <string name="addressTitle">Address</string>
+    <string name="districtTitle">District</string>
+    <string name="upazilaTitle">Upazila</string>
+    <string name="postalCodeTitle">Postal Code</string>
+    <string name="countryTitle">Country</string>
+    <string name="chooseAction">Choose Action</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="morning">Good Morning</string>
+    <string name="afternoon">Good Afternoon</string>
+    <string name="evening">Good Evening</string>
+    <string name="hello">Hello</string>
+    <string name="profile">Profile</string>
+    <string name="fileShare">File Share</string>
+    <string name="settings">Settings</string>
+    <string name="notification">Notification</string>
+    <string name="about">About</string>
+    <string name="device">Device</string>
+    <string name="iotDevice">Iot Device</string>
+    <string name="deviceData">Device Data</string>
+    <string name="add">Add</string>
+    <string name="chat">Chat</string>
+    <string name="chats">Chats</string>
+    <string name="home">Home</string>
+    <string name="second">Sec</string>
+    <string name="minute">Min</string>
+    <string name="hour">HR</string>
+    <string name="day">Day</string>
+    <string name="ratingAndFeedback">Rating &amp; Feedback</string>
+    <string name="shareAPkVia">Share Apk Via</string>
+    <string name="select_CoverPhoto">Select Cover photo</string>
+    <string name="select_ProfilePhoto">Select Profile photo</string>
+    <string name="select_UserPhoto">Select Your Photo</string>
+    <string name="select_Photo">Select Photo</string>
+    <string name="select_ReportPhoto">Select Report Photo</string>
+    <string name="select_NidPhoto">Select Your NID</string>
+    <string name="yrs">Yrs</string>
+    <string name="preferences">Preferences</string>
+    <string name="allowNotifications">Allow Notifications</string>
+    <string name="permissions">Permissions</string>
+    <string name="phoneCallAccess">Phone Call Access</string>
+    <string name="callPermission">Call Permission</string>
+    <string name="locationAccess">Location Access</string>
+    <string name="locationPermission">Location Permission</string>
+    <string name="cameraAccess">Camera Access</string>
+    <string name="cameraPermission">Camera Permission</string>
+    <string name="galleryAccess">Gallery Access</string>
+    <string name="galleryPermission">Gallery Permission</string>
+    <string name="patientTitle">Patient</string>
+    <string name="patients">Patients</string>
+    <string name="followers">Followers</string>
+    <string name="doctorTitle">Doctor</string>
+    <string name="doctors">Doctors</string>
+    <string name="presentAddress">Present Address</string>
+    <string name="practiceAddress">Practice Address</string>
+    <string name="personalDetails">Personal Details</string>
+    <string name="academicDetails">Academic Details</string>
+    <string name="professionalDetails">Professional Details</string>
+    <string name="forgot">Forgot</string>
+    <string name="yourPassword">Your Password!</string>
+    <string name="giveFeedback">Give Feedback</string>
+    <string name="view">View</string>
+    <string name="upload">Upload</string>
+    <string name="yourReport">Your Report</string>
+    <string name="toYourDoctor">To Your Doctor!</string>
+    <string name="toYourPatient">To Your Patient!</string>
+    <string name="activeNow">Active Now</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="any">Any</string>
+    <string name="Requests">Requests</string>
+    <string name="experience">Experience</string>
+    <string name="ratings">Ratings</string>
+    <string name="aboutDoctor">About Doctor</string>
+    <string name="workingTime">Working Time</string>
+    <string name="communication">Communication</string>
+    <string name="messaging">Messaging</string>
+    <string name="audioCall">Audio Call</string>
+    <string name="videoCall">Video Call</string>
+    <string name="min">Min</string>
+    <string name="max">Max</string>
+    <string name="apply">Apply</string>
+    <string name="search">Search</string>
+    <string name="doctorRightNow">Doctor Right Now!</string>
+    <string name="viewAll">view all</string>
+    <string name="report">Report</string>
+    <string name="reports">Reports</string>
+    <string name="medicalReports">Medical Reports</string>
+    <string name="deviceReports">Device Reports</string>
+    <string name="rememberMe">Remember me</string>
+    <string name="password">Password</string>
+    <string name="awards">Awards</string>
+    <string name="bullet">&#8729;</string>
+
+
+    <!--Hints-->
+    <string name="name_Hint">Name</string>
+    <string name="email_Hint">Email</string>
+    <string name="phone_Hint">Phone</string>
+    <string name="password_Hint">Password</string>
+    <string name="confirmPassword_Hint">Confirm Password</string>
+    <string name="maritalStatus_Hint">Marital Status</string>
+    <string name="gender_Hint">Sex</string>
+    <string name="dob_Hint">Date of Birth</string>
+    <string name="height_Hint">Height</string>
+    <string name="feet_Hint">ft</string>
+    <string name="kg_Hint">kg</string>
+    <string name="weight_Hint">Weight</string>
+    <string name="language_Hint">Languages</string>
+    <string name="bio_Hint">Describe your professional bio…</string>
+    <string name="awards_Hint">Give details about any awards, publications or training (if any)…</string>
+    <string name="qualification_Hint">Qualifications</string>
+    <string name="specialty_Hint">Specialty</string>
+    <string name="Specialist_Hint">Specialists</string>
+    <string name="nid_Hint">NID No.</string>
+    <string name="bmdc_Hint">BMDC Reg No.</string>
+    <string name="consultationFees_Hint">Consultation Fees</string>
+    <string name="address_Hint">Address</string>
+    <string name="country_Hint">Country</string>
+    <string name="district_Hint">District</string>
+    <string name="upazila_Hint">Upazila</string>
+    <string name="postalCode_Hint">Postal Code</string>
+    <string name="message_Hint">Type a message…</string>
+    <string name="writeHere_Hint">Write here…</string>
+    <string name="tellUs_Hint">Please, tell us more…</string>
+    <string name="title_Hint">Title</string>
+    <string name="channelId_Hint">Channel Id</string>
+    <string name="key_Hint">Key</string>
+    <string name="searchForDoctors">Search for doctors</string>
+    <string name="searchByName">Search by name/specialty</string>
+    <string name="availability">Availability</string>
+    <string name="latestBlog">Latest Blog</string>
+    <string name="dummyContactNo">01523456…</string>
+    <string name="dummyBmdcNo">Without A-(like 1,2,3)</string>
+    <string name="zero">0</string>
+    <string name="addDoctor">Add Doctor</string>
+    <string name="cancelRequest">Cancel Request</string>
+    <string name="follow">Follow</string>
+    <string name="unfollow">Unfollow</string>
+    <string name="unknown">Unknown</string>
+    <string name="sentAnAttachment">Sent an attachment</string>
+    <string name="bodyTemperature">TEMPERATURE</string>
+    <string name="pulseRate">PULSE RATE</string>
+    <string name="ecg">ECG</string>
+    <string name="oxygenSaturation">OXYGEN SATURATION</string>
+    <string name="normal">Normal</string>
+    <string name="high">High</string>
+    <string name="low">Low</string>
+
+    <!--Message-->
+    <string name="allowNotificationMessage">&quot;Matrika&quot; app requires Notification permission, do you allow?</string>
+    <string name="includingNotification">Including: Push Notification</string>
+    <string name="dontAskAgain" >Don\'t ask again once prohibited</string>
+    <string name="network_Error">Network error. Please retry when network is stable.</string>
+    <string name="failureMessage">Sorry! please try again</string>
+    <string name="failureToUpload">Sorry, there is a problem uploading your image!</string>
+    <string name="haventAccess">Sorry! you haven\'t access right now</string>
+    <string name="dataNotExist">Please! check your channel id &amp; key</string>
+    <string name="profileUpdateFailed">Sorry! Profile Update failed, please try again</string>
+    <string name="callPermissionMessage">Phone Call Permission is necessary for calling</string>
+    <string name="galleryPermissionMessage">Gallery Permission is necessary for selecting photo</string>
+    <string name="locationPermissionMessage">Location Permission is necessary for getting your Location</string>
+    <string name="cameraPermissionMessage">Camera Permission is necessary for capturing photo</string>
+    <string name="phoneCallAccessDetails">To contact with role</string>
+    <string name="locationAccessDetails">For a better pickup experience</string>
+    <string name="cameraAccessDetails">Capture photo using device camera</string>
+    <string name="galleryAccessDetails">Upload photo from gallery</string>
+    <string name="requestFailed">There was an error with your request</string>
+    <string name="reportFailed">Sorry, report not sent</string>
+    <string name="feedbackFailed">Sorry, feedback not sent</string>
+    <string name="dontHaveAccount">If you don\'t have account?</string>
+    <string name="yearsOfExperience">Years of Experience?</string>
+    <string name="averageNoOfPatients">Average no. of patients you may consult in a day?</string>
+    <string name="averageConsultationTime">Average consultation time (in minutes)?</string>
+    <string name="confirmEmailMessage">Enter your email and we we\'ll send the instructions on how to reset your password.</string>
+    <string name="feedbackDoctorMessage">If you have been asked for feedback about the care and treatment you’ve received from your doctor, please do try to take part – your views make a difference. Your doctor wants to know what you think as your feedback helps them look at how they can improve the care they give.</string>
+    <string name="reportDoctorMessage">Why are you reporting this doctor?</string>
+    <string name="viewDataMessage">You have to give your channel id &amp; key</string>
+    <string name="reportPatientMessage">Why are you reporting this patient?</string>
+    <string name="messagingDetails">Chat me up, share photos.</string>
+    <string name="audioCallDetails">Call your doctor directly.</string>
+    <string name="videoCallDetails">See your role live.</string>
+    <string name="loremIpsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</string>
+    <string name="emailExist">Sorry! Your email already exist, please try another one</string>
+    <string name="registrationFailed">Sorry! Registration failed, please try again later</string>
+    <string name="signInValidityFailed">Sorry! Sign In failed, please try with registered email</string>
+    <string name="profileNotVerifiedTitle">Profile not verified</string>
+    <string name="profileNotVerifiedMessage">This profile is not yet verified. Please check back soon!</string>
+    <string name="yourProfileNotVerified">Your profile is not verified yet. Please try later!</string>
+    <string name="authenticationFailed">Sorry! Sign In failed, please check your email/password</string>
+    <string name="signInFailed">Sorry! Sign In failed, please try again</string>
+    <string name="sendingEmailFailed">Sorry! Mail sending failed, please try with registered email</string>
+    <string name="sendingMessageFailed">Sorry! message sending failed.</string>
+    <string name="emptyChatsTitle">Chats will appear here</string>
+    <string name="emptyChatsSubtitle">Communicate with patients</string>
+    <string name="emptyPatientsTitle">Patients will appear here</string>
+    <string name="emptyPatientsSubtitle">You have no patients</string>
+    <string name="emptyDoctorsTitle">Doctors will appear here</string>
+    <string name="emptyDoctorsSubtitle">You have no doctors</string>
+    <string name="emptyRequestsTitle">Patients Request will appear here</string>
+    <string name="emptyRequestsSubtitle">You have no patient requests</string>
+    <string name="emptyReportsTitle">Reports will appear here</string>
+    <string name="emptyReportsSubtitle">You haven\'t uploaded any reports yet</string>
+    <string name="youCantChat">Sorry, you\'re not allowed to chat with this</string>
+    <string name="youCantCall">Sorry, you\'re not allowed to call this</string>
+    <string name="youCantReply">You can\'t reply to this conversation.</string>
+    <string name="shareFileMessage">Are you sure, ypu want to share this file?</string>
+
+
+    <!--Input Error-->
+    <string name="name_Error">Please, enter your name!</string>
+    <string name="email_Error">Please, enter your email!</string>
+    <string name="phone_Error">Please, enter your contact number!</string>
+    <string name="gender_Error">Please, select your gender!</string>
+    <string name="nid_Error">Please, enter your NID no!</string>
+    <string name="nidPhoto_Error">Please, upload your NID !</string>
+    <string name="languages_Error">Please, add languages!</string>
+    <string name="qualifications_Error">Please, add your qualifications!</string>
+    <string name="specialty_Error">Please, choose a specialty!</string>
+    <string name="specialist_Error">Please, select specialists!</string>
+    <string name="bmdc_Error">Please, enter BMDC registration no!</string>
+    <string name="consultPatientNo_Error">Please, enter patient\'s no!</string>
+    <string name="consultationTime_Error">Please, enter consultation time!</string>
+    <string name="fees_Error">Please, enter amount!</string>
+    <string name="maritalStatus_Error">Please, select your marital status!</string>
+    <string name="district_Error">Please, enter your district!</string>
+    <string name="password_Error">Please, enter your password!</string>
+    <string name="validEmail_Error">Please, enter valid email!</string>
+    <string name="validPhone_Error">Please, enter valid number!</string>
+    <string name="validPassword_Error">Length must be at least 8 characters!</string>
+    <string name="passwordNotMatch_Error">Those password didn\'t match!</string>
+    <string name="channelId_Error">Please, enter channel id!</string>
+    <string name="validChannelId_Error">Please, enter valid channel id!</string>
+    <string name="key_Error">Please, enter key!</string>
+    <string name="validKey_Error">Please, enter valid key!</string>
+
+
+    <!--Dialog-->
+    <string name="yesShare">Yes, Share</string>
+    <string name="okay">Okay</string>
+    <string name="gotIt">Got It!</string>
+    <string name="allow">Allow Now</string>
+    <string name="forbid">Forbid</string>
+    <string name="cancel">Cancel</string>
+    <string name="complete">Complete</string>
+    <string name="call">Call</string>
+    <string name="retry">Retry</string>
+    <string name="tryAgain">Try Again</string>
+    <string name="processing">Processing…</string>
+    <string name="uploading">Uploading…</string>
+    <string name="sending">Sending…</string>
+    <string name="openSettings">Open Settings</string>
+    <string name="viewData">View Data</string>
+    <string name="addNew">Add New</string>
+
+    <!--Symbol-->
+    <string name="degreeFerSymbol">\u00B0F</string>
+    <string name="nullSymbol">Ø</string>
+    <string name="bpm">bpm</string>
+    <string name="percent">%</string>
+    <string name="millisecondSymbol">ms</string>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="maritalStatus">
+        <item>Single</item>
+        <item>Married</item>
+        <item>Divorced</item>
+        <item>Widowed</item>
+    </string-array>
+
+    <string-array name="languages">
+        <item>Arabic</item>
+        <item>Bengali</item>
+        <item>Bhojpuri</item>
+        <item>Chinese</item>
+        <item>English</item>
+        <item>Filipino</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Gujarati</item>
+        <item>Hausa</item>
+        <item>Hindi</item>
+        <item>Hokkien</item>
+        <item>Indonesian</item>
+        <item>Italian</item>
+        <item>Japanese</item>
+        <item>Javanese</item>
+        <item>Kannada</item>
+        <item>Korean</item>
+        <item>Marathi</item>
+        <item>Persian</item>
+        <item>Portuguese</item>
+        <item>Punjabi</item>
+        <item>Russian</item>
+        <item>Spanish</item>
+        <item>Swahili</item>
+        <item>Tamil</item>
+        <item>Telugu</item>
+        <item>Thai</item>
+        <item>Turkish</item>
+        <item>Urdu</item>
+        <item>Vietnamese</item>
+    </string-array>
+
+    <string-array name="qualifications">
+        <item>BCh</item>
+        <item>BChir</item>
+        <item>BM</item>
+        <item>BMedSci</item>
+        <item>BPharm</item>
+        <item>BS</item>
+        <item>BSc</item>
+        <item>ChB</item>
+        <item>CPH</item>
+        <item>DA</item>
+        <item>DCh</item>
+        <item>DCH</item>
+        <item>DCP</item>
+        <item>DCPath</item>
+        <item>DDS</item>
+        <item>DFM</item>
+        <item>DGM</item>
+        <item>DGO</item>
+        <item>Dip GU Med</item>
+        <item>DMR</item>
+        <item>DMD</item>
+        <item>DO</item>
+        <item>DObst</item>
+        <item>DPath</item>
+        <item>DPhil</item>
+        <item>DPhysMed</item>
+        <item>DPH</item>
+        <item>DPM</item>
+        <item>DR</item>
+        <item>DRCOG</item>
+        <item>DRCPath</item>
+        <item>DS</item>
+        <item>FFA</item>
+        <item>FFCM</item>
+        <item>FFFP</item>
+        <item>FFPath</item>
+        <item>FFPHM</item>
+        <item>FFR</item>
+        <item>FRCA</item>
+        <item>FRCGP</item>
+        <item>FRCOG</item>
+        <item>FRCOphth</item>
+        <item>FRCPath</item>
+        <item>FRCPS</item>
+        <item>FRCPsych</item>
+        <item>FRCR</item>
+        <item>FRCS</item>
+        <item>FRCSI</item>
+        <item>FRS</item>
+        <item>FRSH</item>
+        <item>GP</item>
+        <item>LMS</item>
+        <item>LRCP</item>
+        <item>LRCPI</item>
+        <item>LRCPS</item>
+        <item>LRCS</item>
+        <item>LRCSI</item>
+        <item>MBAcA</item>
+        <item>MBBCh</item>
+        <item>MBBS</item>
+        <item>MBChB</item>
+        <item>MCh</item>
+        <item>MChOrth</item>
+        <item>MClinPscychol</item>
+        <item>MD</item>
+        <item>MFFP</item>
+        <item>MFOM</item>
+        <item>MFPHM</item>
+        <item>MMed</item>
+        <item>MMedSc</item>
+        <item>MPhil</item>
+        <item>MRCGP</item>
+        <item>MRCOG</item>
+        <item>MRCP</item>
+        <item>MRCPath</item>
+        <item>MRCPI</item>
+        <item>MRCPsych</item>
+        <item>MRCS</item>
+        <item>MS</item>
+        <item>MSc</item>
+        <item>PRHO</item>
+        <item>PhD</item>
+        <item>SHO</item>
+        <item>SpR</item>
+    </string-array>
+
+    <string name="title_chats">Chats</string>
+    <string name="title_doctors">Doctors</string>
+    <string name="title_Patients">Patients</string>
+    <string name="title_more">More</string>
+
+</resources>

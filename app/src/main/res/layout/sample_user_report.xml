@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_156sdp"
+    android:layout_margin="@dimen/margin_Medium"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/radius_Large"
+    app:cardElevation="@dimen/card_Elevation_Large"
+    app:cardBackgroundColor="@color/colorWhite"
+    android:padding="@dimen/padding_X_Large"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/report.Photo.Iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_placeholder_large"
+            android:scaleType="centerCrop"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/report.Title.Tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTransBlack"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:paddingTop="@dimen/padding_Medium"
+            android:paddingStart="@dimen/padding_Large"
+            android:paddingEnd="@dimen/padding_Large"
+            android:paddingBottom="@dimen/padding_Medium"
+            tools:text="Title"
+            android:textSize="@dimen/text_Size_Small"
+            android:textColor="@color/font_Color_Light"
+            android:fontFamily="@font/oxanium_regular"/>
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

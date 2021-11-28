@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_Medium"
+    app:contentPaddingTop="@dimen/padding_X_Large"
+    app:contentPaddingLeft="@dimen/padding_X_Large"
+    app:contentPaddingRight="@dimen/padding_X_Large"
+    app:contentPaddingBottom="@dimen/padding_Small"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="@dimen/radius_Default"
+    app:cardElevation="@dimen/card_Elevation_Small">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="DisableBaselineAlignment">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/allowNotificationMessage"
+            android:textSize="@dimen/text_Size_Small"
+            android:textColor="@color/font_Color_Dark"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margin_Medium"
+            android:text="@string/includingNotification"
+            android:textSize="@dimen/text_Size_XX_Small"
+            android:textStyle="normal"
+            android:textColor="@color/font_Color_Dark"/>
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/notification.DontAsk.CheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_Small"
+            android:buttonTint="@color/font_Color_Gray"
+            android:text="@string/dontAskAgain"
+            android:textSize="@dimen/text_Size_XXX_Small"
+            android:textStyle="normal"
+            android:textColor="@color/font_Color_Gray"/>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/notification.Forbid.Button"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="@string/forbid"
+                android:textSize="@dimen/text_Size_Small"
+                android:textColor="@color/font_Color_Accent"
+                android:textAllCaps="false"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/notification.Allow.Button"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="@string/allow"
+                android:textSize="@dimen/text_Size_Small"
+                android:textColor="@color/font_Color_Accent"
+                android:textAllCaps="false"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.cardview.widget.CardView>

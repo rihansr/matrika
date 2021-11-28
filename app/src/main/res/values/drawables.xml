@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="activity_Background" type="color">@color/colorWhite</item>
+    <item name="dialog_Background" type="color">@color/colorWhite</item>
+    <item name="icon_Color_Accent" type="color">@color/colorAccent</item>
+    <item name="icon_Color_Primary" type="color">@color/colorPrimary</item>
+    <item name="icon_Color_Light" type="color">@color/colorWhite</item>
+    <item name="icon_Color_Dark" type="color">@color/colorBlack</item>
+    <item name="icon_Color_Gray" type="color">@color/colorGray</item>
+    <item name="icon_Color_LightGray" type="color">@color/colorLightGray</item>
+    <item name="font_Color_Accent" type="color">@color/colorAccent</item>
+    <item name="font_Color_Light" type="color">@color/colorWhite</item>
+    <item name="font_Color_Dark" type="color">@color/colorBlack</item>
+    <item name="font_Color_Gray" type="color">@color/colorGray</item>
+    <item name="font_Color_LightGray" type="color">@color/colorLightGray</item>
+</resources>

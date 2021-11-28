@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".fragment.SignUpDoctorFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_marginTop="@dimen/margin_X_Large"
+        android:layout_marginStart="@dimen/margin_XXX_Large"
+        android:layout_marginBottom="@dimen/margin_X_Small"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/signUp.UploadPhoto.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="@dimen/margin_Small">
+
+            <com.telemedicine.matrika.wiget.CircleImageView
+                android:id="@+id/signUp.UserPhoto.Iv"
+                android:layout_width="@dimen/icon_Size_XXXXX_Large"
+                android:layout_height="@dimen/icon_Size_XXXXX_Large"
+                android:scaleType="centerCrop"
+                android:clickable="false"
+                android:focusable="false"
+                android:background="@drawable/shape_round"
+                android:backgroundTint="@color/colorSmokeWhite"
+                app:srcCompat="@drawable/ic_avatar"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false"
+                android:layout_below="@+id/signUp.UserPhoto.Iv"
+                android:layout_toEndOf="@+id/signUp.UserPhoto.Iv"
+                android:layout_marginStart="@dimen/_minus22sdp"
+                android:layout_marginTop="@dimen/_minus22sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_upload_camera" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TitleTvStyle"
+            android:layout_marginBottom="@dimen/margin_X_Small"
+            android:text="@string/doctorTitle"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_Size_Large"
+            android:textColor="@color/font_Color_Accent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/signUp.Title.Tv"
+            style="@style/TitleTvStyle"
+            android:text="@string/personalDetails"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_Size_XXXX_Small"
+            android:textColor="@color/font_Color_LightGray"
+            android:fontFamily="@font/oxanium_semi_bold"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <ViewFlipper
+        android:id="@+id/signUp.Form.Flipper"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:autoStart="false"
+        android:flipInterval="2000"
+        android:inAnimation="@anim/flip_in"
+        android:outAnimation="@anim/flip_out">
+
+        <!--Personal Info-->
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/signUp.PersonalInfo.Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="vertical"
+            android:requiresFadingEdge="vertical"
+            android:fadingEdgeLength="@dimen/fading_Edge_Length"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:descendantFocusability="blocksDescendants">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/signUp.Name.Input"
+                    style="@style/InputFieldStyle"
+                    android:drawableStart="@drawable/ic_input_username"
+                    android:hint="@string/name_Hint"
+                    android:inputType="textPersonName|textCapWords"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/signUp.Email.Input"
+                    style="@style/InputFieldStyle"
+                    android:drawableStart="@drawable/ic_input_email"
+                    android:hint="@string/email_Hint"
+                    android:inputType="textWebEmailAddress"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/signUp.Phone.Input"
+                    style="@style/InputFieldStyle"
+                    android:drawableStart="@drawable/ic_input_phone"
+                    android:hint="@string/phone_Hint"
+                    android:inputType="numberPassword"
+                    android:maxLength="11"
+                    android:digits="0123456789"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/signUp.Gender.Input"
+                    style="@style/InputFieldStyle"
+                    android:drawableStart="@drawable/ic_input_gender"
+                    android:drawableEnd="@drawable/ic_arrow_down"
+                    android:hint="@string/gender_Hint"
+                    android:inputType="none"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/signUp.BirthDate.Input"
+                    style="@style/InputFieldStyle"
+                    android:drawableStart="@drawable/ic_input_dob"
+                    android:hint="@string/dob_Hint"
+                    android:inputType="none"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_input_field"
+                    android:layout_marginTop="@dimen/margin_Medium"
+                    android:layout_marginStart="@dimen/margin_XX_Large"
+                    android:layout_marginEnd="@dimen/margin_XX_Large"
+                    android:layout_marginBottom="@dimen/margin_Medium"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/signUp.NID.Input"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        style="@style/InputFieldStyle"
+                        android:layout_margin="0dp"
+                        android:drawableStart="@drawable/ic_input_nid"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/nid_Hint"
+                        android:digits="0123456789"
+                        android:maxLength="17"
+                        android:inputType="numberPassword"/>
+
+                    <FrameLayout
+                        android:id="@+id/signUp.UploadNid.Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_gravity="center_vertical|end">
+
+                        <com.telemedicine.matrika.wiget.CircleImageView
+                            android:id="@+id/signUp.NidPhoto.Iv"
+                            android:layout_width="@dimen/icon_Size_Small"
+                            android:layout_height="@dimen/icon_Size_Small"
+                            android:layout_marginStart="@dimen/margin_Large"
+                            android:layout_marginEnd="@dimen/margin_Large"
+                            android:scaleType="centerCrop"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:src="@drawable/ic_input_photo"/>
+
+                    </FrameLayout>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <!--Academic Info-->
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/signUp.AcademicInfo.Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="vertical"
+            android:requiresFadingEdge="vertical"
+            android:fadingEdgeLength="@dimen/fading_Edge_Length"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:descendantFocusability="blocksDescendants">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.hootsuite.nachos.NachoTextView
+                    android:id="@+id/signUp.Languages.Input"
+                    style="@style/InputFieldStyle"
+                    android:paddingTop="@dimen/padding_X_Small"
+                    android:paddingBottom="@dimen/padding_X_Small"
+                    android:drawableStart="@drawable/ic_input_language"
+                    app:chipSpacing="@dimen/margin_X_Small"
+                    app:chipTextSize="@dimen/text_Size_XXX_Small"
+                    android:textSize="@dimen/text_Size_Small"
+                    android:hint="@string/language_Hint"
+                    android:inputType="textCapWords|textAutoCorrect|textMultiLine"/>
+
+                <com.hootsuite.nachos.NachoTextView
+                    android:id="@+id/signUp.Qualifications.Input"
+                    style="@style/InputFieldStyle"
+                    android:paddingTop="@dimen/padding_X_Small"
+                    android:paddingBottom="@dimen/padding_X_Small"
+                    android:drawableStart="@drawable/ic_input_qualification"
+                    app:chipSpacing="@dimen/margin_X_Small"
+                    app:chipTextSize="@dimen/text_Size_XXX_Small"
+                    android:textSize="@dimen/text_Size_Small"
+                    android:hint="@string/qualification_Hint"
+                    android:inputType="textCapWords|textAutoCorrect|textMultiLine"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/signUp.Specialty.Input"
+                    style="@style/InputFieldStyle"
+                    android:drawableStart="@drawable/ic_input_specialty"
+                    android:drawableEnd="@drawable/ic_arrow_down"
+                    android:hint="@string/specialty_Hint"
+                    android:inputType="none"/>
+
+                <com.hootsuite.nachos.NachoTextView
+                    android:id="@+id/signUp.Specialists.Input"
+                    style="@style/InputFieldStyle"
+                    android:paddingTop="@dimen/padding_X_Small"
+                    android:paddingBottom="@dimen/padding_X_Small"
+                    android:drawableStart="@drawable/ic_input_specialist"
+                    app:chipSpacing="@dimen/margin_X_Small"
+                    app:chipTextSize="@dimen/text_Size_XXX_Small"
+                    android:textSize="@dimen/text_Size_Small"
+                    android:hint="@string/Specialist_Hint"
+                    android:inputType="textCapWords|textAutoCorrect|textMultiLine"
+                    android:visibility="gone"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/signUp.BmDc.Input"
+                    style="@style/InputFieldStyle"
+                    android:drawableStart="@drawable/ic_input_bmdc"
+                    android:hint="@string/bmdc_Hint"
+                    android:digits="0123456789"
+                    android:maxLength="6"
+                    android:inputType="numberPassword"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <!--Professional Info-->
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/signUp.ProfessionalInfo.Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="vertical"
+            android:requiresFadingEdge="vertical"
+            android:fadingEdgeLength="@dimen/fading_Edge_Length"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:descendantFocusability="blocksDescendants">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/signUp.Bio.Input"
+                    style="@style/InputFieldStyle"
+                    android:minHeight="@dimen/_96sdp"
+                    android:maxHeight="@dimen/_144sdp"
+                    android:hint="@string/bio_Hint"
+                    android:inputType="textMultiLine"
+                    android:gravity="top"
+                    android:maxLines="10"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_Small"
+                    android:layout_marginStart="@dimen/margin_XX_Large"
+                    android:layout_marginEnd="@dimen/margin_XX_Large"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        style="@style/TitleTvStyle"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginStart="@dimen/margin_Small"
+                        android:text="@string/yearsOfExperience"
+                        android:textSize="@dimen/text_Size_Small"
+                        android:textColor="@color/font_Color_LightGray"
+                        android:fontFamily="@font/oxanium_semi_bold"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/signUp.ExperienceYears.Input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="@dimen/_48sdp"
+                        android:background="@drawable/shape_input_field"
+                        android:layout_marginStart="@dimen/margin_Large"
+                        android:paddingStart="@dimen/padding_X_Small"
+                        android:paddingTop="@dimen/padding_X_Small"
+                        android:paddingBottom="@dimen/padding_X_Small"
+                        android:paddingEnd="@dimen/padding_X_Small"
+                        android:gravity="center"
+                        android:inputType="numberPassword"
+                        android:digits="0123456789"
+                        android:maxLength="2"
+                        android:fontFamily="@font/oxanium_regular"
+                        android:textColor="@color/font_Color_Dark"
+                        android:hint="@string/zero"
+                        android:textColorHint="@color/font_Color_LightGray"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_Large"
+                    android:layout_marginStart="@dimen/margin_XX_Large"
+                    android:layout_marginEnd="@dimen/margin_XX_Large"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        style="@style/TitleTvStyle"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginStart="@dimen/margin_Small"
+                        android:text="@string/averageNoOfPatients"
+                        android:textSize="@dimen/text_Size_Small"
+                        android:textColor="@color/font_Color_LightGray"
+                        android:fontFamily="@font/oxanium_semi_bold"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/signUp.ConsultPatientsNo.Input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="@dimen/_48sdp"
+                        android:background="@drawable/shape_input_field"
+                        android:layout_marginStart="@dimen/margin_Large"
+                        android:paddingStart="@dimen/padding_X_Small"
+                        android:paddingTop="@dimen/padding_X_Small"
+                        android:paddingBottom="@dimen/padding_X_Small"
+                        android:paddingEnd="@dimen/padding_X_Small"
+                        android:gravity="center"
+                        android:inputType="numberPassword"
+                        android:digits="0123456789"
+                        android:maxLength="2"
+                        android:textSize="@dimen/text_Size_Small"
+                        android:fontFamily="@font/oxanium_regular"
+                        android:textColor="@color/font_Color_Dark" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_Large"
+                    android:layout_marginStart="@dimen/margin_XX_Large"
+                    android:layout_marginEnd="@dimen/margin_XX_Large"
+                    android:layout_marginBottom="@dimen/margin_Large"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        style="@style/TitleTvStyle"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginStart="@dimen/margin_Small"
+                        android:text="@string/averageConsultationTime"
+                        android:textSize="@dimen/text_Size_Small"
+                        android:textColor="@color/font_Color_LightGray"
+                        android:fontFamily="@font/oxanium_semi_bold"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/signUp.ConsultationTime.Input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="@dimen/_48sdp"
+                        android:background="@drawable/shape_input_field"
+                        android:layout_marginStart="@dimen/margin_Large"
+                        android:paddingStart="@dimen/padding_X_Small"
+                        android:paddingTop="@dimen/padding_X_Small"
+                        android:paddingBottom="@dimen/padding_X_Small"
+                        android:paddingEnd="@dimen/padding_X_Small"
+                        android:gravity="center"
+                        android:inputType="numberPassword"
+                        android:digits="0123456789"
+                        android:maxLength="3"
+                        tools:text="1"
+                        android:textSize="@dimen/text_Size_Small"
+                        android:fontFamily="@font/oxanium_regular"
+                        android:textColor="@color/font_Color_Dark" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/signUp.Fees.Input"
+                    style="@style/InputFieldStyle"
+                    android:drawableEnd="@drawable/ic_input_fees"
+                    android:hint="@string/consultationFees_Hint"
+                    android:inputType="numberPassword"
+                    android:digits="0123456789"
+                    android:maxLength="5"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/signUp.Awards.Input"
+                    style="@style/InputFieldStyle"
+                    android:minHeight="@dimen/_96sdp"
+                    android:maxHeight="@dimen/_144sdp"
+                    android:hint="@string/awards_Hint"
+                    android:inputType="textMultiLine"
+                    android:gravity="top"
+                    android:maxLines="10"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <include
+            android:id="@+id/signUp.Address.Layout"
+            layout="@layout/layout_address"/>
+
+        <include
+            android:id="@+id/signUp.Password.Layout"
+            layout="@layout/layout_password"/>
+
+    </ViewFlipper>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signUp.Register.Button"
+        style="@style/ButtonStyle"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:layout_marginBottom="@dimen/margin_XX_Large" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

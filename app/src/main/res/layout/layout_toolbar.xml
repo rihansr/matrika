@@ -1,0 +1,48 @@
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:paddingStart="@dimen/padding_X_Large"
+    android:paddingEnd="@dimen/padding_X_Large"
+    android:background="@color/activity_Background">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/toolbar.Left.Button"
+        android:layout_width="@dimen/icon_Size_Medium"
+        android:layout_height="@dimen/icon_Size_Medium"
+        android:layout_gravity="start|center_vertical"
+        android:layout_marginEnd="@dimen/margin_Default"
+        android:background="@drawable/shape_curve"
+        android:padding="@dimen/_6sdp"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/ic_arrow_left"  />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/toolbar.Title.Tv"
+        style="@style/TitleTvStyle"
+        android:layout_width="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="0dp"
+        android:layout_weight="1"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:fontFamily="@font/oxanium_regular"
+        android:textSize="@dimen/text_Size_X_Large"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="@dimen/text_Size_Default"
+        tools:text="Title" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/toolbar.Right.Button"
+        android:layout_width="@dimen/icon_Size_Medium"
+        android:layout_height="@dimen/icon_Size_Medium"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginStart="@dimen/margin_Default"
+        android:background="@drawable/shape_curve"
+        android:padding="@dimen/_6sdp"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/ic_more"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

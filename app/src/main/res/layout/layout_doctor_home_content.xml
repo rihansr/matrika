@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home.Content.Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_Background"
+    android:orientation="vertical"
+    tools:context=".activity.DoctorHomeActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="@dimen/card_Elevation_Default"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_XX_Large"
+        android:paddingStart="@dimen/padding_Large"
+        android:paddingEnd="@dimen/padding_Large">
+
+        <com.telemedicine.matrika.wiget.CircleImageView
+            android:id="@+id/home.Toolbar.UserPhoto.Iv"
+            android:layout_width="@dimen/icon_Size_Medium"
+            android:layout_height="@dimen/icon_Size_Medium"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginEnd="@dimen/margin_Default"
+            android:background="@drawable/shape_round"
+            android:backgroundTint="@color/colorSmokeWhite"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_avatar" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/home.Toolbar.Title.Tv"
+            style="@style/TitleTvStyle"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/oxanium_regular"
+            android:textSize="@dimen/text_Size_X_Large"
+            tools:text="@string/title_chats" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <fragment
+        android:id="@+id/home.Nav.Host.Fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/doctor_navigation" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

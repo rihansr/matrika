@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/address.Input"
+        style="@style/InputFieldStyle"
+        android:drawableStart="@drawable/ic_input_address"
+        android:hint="@string/address_Hint"
+        android:inputType="textMultiLine"
+        android:maxLines="3"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+            android:id="@+id/district.Input"
+            android:layout_weight="1"
+            style="@style/InputFieldStyle"
+            android:layout_marginEnd="@dimen/margin_Small"
+            android:hint="@string/district_Hint"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:inputType="textAutoComplete|textCapWords"/>
+
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+            android:id="@+id/upazila.Input"
+            android:layout_weight="1"
+            style="@style/InputFieldStyle"
+            android:layout_marginStart="@dimen/margin_Small"
+            android:hint="@string/upazila_Hint"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:inputType="textAutoComplete|textCapWords"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/postalCode.Input"
+            android:layout_weight="1"
+            style="@style/InputFieldStyle"
+            android:layout_marginEnd="@dimen/margin_Small"
+            android:hint="@string/postalCode_Hint"
+            android:inputType="number"
+            android:digits="0123456789"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/country.Input"
+            android:layout_weight="1"
+            style="@style/InputFieldStyle"
+            android:layout_marginStart="@dimen/margin_Small"
+            android:hint="@string/country_Hint"
+            android:text="Bangladesh"
+            android:inputType="none"
+            tools:ignore="HardcodedText" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/currentLocation.Button"
+        android:layout_width="wrap_content"
+        style="@style/TitleTvStyle"
+        android:drawableStart="@drawable/ic_current_location"
+        android:drawablePadding="@dimen/padding_Medium"
+        android:padding="@dimen/padding_Medium"
+        android:text="@string/currentLocation"
+        android:textSize="@dimen/text_Size_Small"
+        android:textColor="@color/font_Color_Gray"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/oxanium_semi_bold"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

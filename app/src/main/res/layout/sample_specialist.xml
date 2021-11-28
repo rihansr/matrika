@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_Small"
+    android:orientation="vertical"
+    tools:context=".adapter.ChatGroupAdapter">
+
+    <!--Time-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/itemTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_curve"
+        android:paddingTop="@dimen/padding_Medium"
+        android:paddingStart="@dimen/padding_X_Large"
+        android:paddingEnd="@dimen/padding_X_Large"
+        android:paddingBottom="@dimen/padding_Medium"
+        tools:text="Dentist"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_Size_XX_Small"
+        android:textColor="@color/font_Color_Gray"
+        android:fontFamily="@font/oxanium_regular"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

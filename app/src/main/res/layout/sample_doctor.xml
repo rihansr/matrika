@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_Medium"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/radius_Large"
+    app:cardElevation="@dimen/card_Elevation_Large"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:contentPaddingTop="@dimen/padding_X_Large"
+    app:contentPaddingLeft="@dimen/padding_Large"
+    app:contentPaddingRight="@dimen/padding_Large"
+    app:contentPaddingBottom="@dimen/padding_X_Large"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation=".25dp"
+        android:orientation="vertical">
+
+        <!--Doctor Photo-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin_Medium"
+            android:gravity="center">
+
+            <FrameLayout
+                android:id="@+id/doctor.Photo.Layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.telemedicine.matrika.wiget.CircleImageView
+                    android:id="@+id/doctor.Photo.Iv"
+                    android:layout_width="@dimen/icon_Size_XXXX_Large"
+                    android:layout_height="@dimen/icon_Size_XXXX_Large"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/shape_round"
+                    android:backgroundTint="@color/colorSmokeWhite"
+                    android:padding="@dimen/padding_X_Small"
+                    android:layout_margin="@dimen/margin_Small"
+                    android:src="@drawable/ic_avatar"
+                    android:elevation="@dimen/card_Elevation_Medium"/>
+
+            </FrameLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/doctor.Active.Icon"
+                android:layout_width="@dimen/icon_Size_X_Small"
+                android:layout_height="@dimen/icon_Size_X_Small"
+                android:clickable="false"
+                android:focusable="false"
+                android:layout_above="@+id/doctor.Photo.Layout"
+                android:layout_toEndOf="@+id/doctor.Photo.Layout"
+                android:layout_marginStart="@dimen/_minus28sdp"
+                android:layout_marginBottom="@dimen/_minus18sdp"
+                app:srcCompat="@drawable/ic_chat_active" />
+
+        </RelativeLayout>
+
+        <!--Doctor Name-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/doctor.Name.Tv"
+            style="@style/TitleTvStyle"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_Small"
+            tools:text="Dr. Bellamy Nicholas"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/text_Size_Small"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="@dimen/text_Size_XX_Small"
+            android:fontFamily="@font/oxanium_semi_bold"/>
+
+        <!--Specialist-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/doctor.Specialty.Tv"
+            style="@style/TitleTvStyle"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_X_Small"
+            android:layout_marginBottom="@dimen/margin_Small"
+            tools:text="Surgeon"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/text_Size_XX_Small"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="@dimen/text_Size_XXX_Small"
+            android:textColor="@color/icon_Color_Gray"
+            android:fontFamily="@font/oxanium_semi_bold"/>
+
+        <!--Specialist-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/doctor.AdditionalInfo.Tv"
+            style="@style/TitleTvStyle"
+            android:layout_gravity="center"
+            android:drawableStart="@drawable/ic_star"
+            android:drawablePadding="@dimen/padding_Small"
+            android:layout_marginBottom="0dp"
+            tools:text="4.5 (135 followers)"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/text_Size_XXX_Small"
+            app:autoSizeMinTextSize="@dimen/text_Size_XXXX_Small"
+            app:autoSizeTextType="uniform"
+            android:textColor="@color/icon_Color_Gray"
+            android:fontFamily="@font/oxanium_regular"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginEnd="@dimen/margin_XXXXXXX_Large"
+    android:paddingTop="@dimen/padding_XX_Small"
+    android:paddingBottom="@dimen/padding_XX_Small"
+    android:orientation="vertical"
+    tools:context=".adapter.ChatGroupAdapter">
+
+   <androidx.appcompat.widget.LinearLayoutCompat
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+       <!--Message-->
+       <androidx.appcompat.widget.AppCompatTextView
+           android:id="@+id/receiver.Message.Tv"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="start"
+           android:background="@drawable/shape_receiver_message"
+           android:paddingTop="@dimen/padding_Medium"
+           android:paddingStart="@dimen/padding_Large"
+           android:paddingEnd="@dimen/padding_Large"
+           android:paddingBottom="@dimen/padding_Medium"
+           tools:text="Message, bla bla blaaaaaa"
+           android:textSize="@dimen/text_Size_X_Small"
+           android:textColor="@color/font_Color_Gray"
+           android:fontFamily="@font/oxanium_regular"
+           android:visibility="visible"/>
+
+       <!--Files-->
+       <androidx.cardview.widget.CardView
+           android:id="@+id/receiver.Files.Layout"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="start"
+           app:cardCornerRadius="@dimen/radius_Large"
+           app:cardElevation="0dp"
+           android:visibility="gone">
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/receiver.Files.Rcv"
+               style="@style/RecyclerViewStyle.Grid"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layoutDirection="rtl"
+               android:layout_gravity="start"
+               android:layout_marginEnd="@dimen/_minus1sdp"
+               android:layout_marginTop="@dimen/_minus1sdp"
+               android:layout_marginBottom="@dimen/_minus1sdp"
+               android:layout_marginStart="@dimen/_minus1sdp"
+               app:spanCount="2"
+               tools:listitem="@layout/sample_photo_grid_2"
+               tools:itemCount="4"
+               android:nestedScrollingEnabled="false"/>
+
+       </androidx.cardview.widget.CardView>
+
+       <!--Time-->
+       <androidx.appcompat.widget.AppCompatTextView
+           android:id="@+id/receiver.SentAt.Tv"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="start"
+           android:layout_marginTop="@dimen/margin_X_Small"
+           android:layout_marginBottom="@dimen/margin_X_Small"
+           tools:text="5:30 Am"
+           android:textSize="@dimen/text_Size_XXXX_Small"
+           android:textColor="@color/font_Color_Gray"
+           android:fontFamily="@font/oxanium_regular"
+           android:visibility="gone"/>
+
+   </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:id="@+id/receiver.Divider.View"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_4sdp"
+        android:visibility="gone"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

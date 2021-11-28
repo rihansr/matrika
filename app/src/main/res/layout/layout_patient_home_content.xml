@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home.Content.Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_Background"
+    android:orientation="vertical"
+    tools:context=".activity.PatientHomeActivity">
+
+    <!--Toolbar-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="@dimen/margin_XX_Large"
+        android:paddingStart="@dimen/padding_Large"
+        android:paddingEnd="@dimen/padding_Large">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/home.Toolbar.Menu.Button"
+            android:layout_width="@dimen/icon_Size_Medium"
+            android:layout_height="@dimen/icon_Size_Medium"
+            android:layout_gravity="start|center_vertical"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/_2sdp"
+            app:srcCompat="@drawable/ic_nav_menu" />
+
+    </FrameLayout>
+
+    <!--Content-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation=".25dp"
+            android:orientation="vertical">
+
+            <!--Specialists Title-->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_X_Large"
+                android:layout_marginTop="@dimen/margin_Medium"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TitleTvStyle"
+                    android:fontFamily="@font/oxanium_light"
+                    android:layout_marginBottom="@dimen/margin_Small"
+                    android:text="@string/search"
+                    android:textSize="@dimen/text_Size_XXX_Large" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TitleTvStyle"
+                    android:layout_marginBottom="@dimen/margin_Small"
+                    android:fontFamily="@font/oxanium_semi_bold"
+                    android:text="@string/doctorRightNow"
+                    android:textSize="@dimen/text_Size_XXX_Large" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!--Search-->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/home.Search.Tv"
+                style="@style/InputFieldStyle"
+                android:layout_marginStart="@dimen/margin_X_Large"
+                android:layout_marginTop="@dimen/margin_X_Large"
+                android:layout_marginEnd="@dimen/margin_X_Large"
+                android:layout_marginBottom="0dp"
+                android:backgroundTint="@color/colorSmokeWhite"
+                android:drawableStart="@drawable/ic_input_search"
+                android:hint="@string/searchByName"
+                android:paddingTop="@dimen/padding_Default"
+                android:paddingBottom="@dimen/padding_Default" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!--Specialty  Title-->
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TitleTvStyle"
+            android:layout_marginStart="@dimen/margin_X_Large"
+            android:layout_marginTop="@dimen/margin_XX_Large"
+            android:layout_marginBottom="@dimen/margin_X_Large"
+            android:text="@string/specialty_Hint" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/home.Specialties.Rcv"
+            style="@style/RecyclerViewStyle.Grid"
+            android:paddingStart="@dimen/padding_Large"
+            android:paddingEnd="@dimen/padding_Large"
+            app:spanCount="3"
+            tools:itemCount="9"
+            android:fadingEdge="vertical"
+            android:requiresFadingEdge="vertical"
+            android:fadingEdgeLength="@dimen/fading_Edge_Length"
+            android:clipToPadding="false"
+            tools:listitem="@layout/sample_specialty"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

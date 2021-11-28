@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.navigation.NavigationView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home.Navigation.Layout"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/activity_Background"
+    android:layout_gravity="end"
+    tools:context=".activity.DoctorHomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Ripple View-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_minus60sdp"
+            android:layout_marginTop="@dimen/_minus40sdp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_minus60sdp"
+                android:layout_marginTop="@dimen/_minus40sdp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/shape_ripple" />
+
+        </FrameLayout>
+
+        <!--Profile Information-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/home.ProfileInfo.Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_XX_Large"
+            android:paddingTop="@dimen/padding_XX_Large"
+            android:layout_marginBottom="@dimen/padding_XX_Large"
+            android:paddingStart="@dimen/padding_Default"
+            android:paddingEnd="@dimen/padding_X_Large"
+            android:gravity="center_vertical"
+            android:layout_alignParentTop="true">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--Username-->
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/home.Nav.UserName.Tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_Large"
+                    android:layout_marginBottom="@dimen/margin_X_Small"
+                    android:textColor="@color/font_Color_Dark"
+                    android:textSize="@dimen/text_Size_Medium"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    tools:text="Rihan S. R."
+                    android:textAlignment="textEnd"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="@dimen/text_Size_X_Small"
+                    android:fontFamily="@font/oxanium_bold"/>
+
+                <!--Contact Number-->
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/home.Nav.UserMail.Tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_Large"
+                    android:layout_marginTop="@dimen/margin_X_Small"
+                    android:textColor="@color/font_Color_Gray"
+                    android:textSize="@dimen/text_Size_XX_Small"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    tools:text="abc123@gmail.com"
+                    android:textAlignment="textEnd"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="@dimen/text_Size_XXX_Small"
+                    android:fontFamily="@font/oxanium_semi_bold"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!--Profile Photo-->
+            <com.telemedicine.matrika.wiget.CircleImageView
+                android:id="@+id/home.Nav.UserPhoto.Iv"
+                android:layout_width="@dimen/icon_Size_XXXXX_Large"
+                android:layout_height="@dimen/icon_Size_XXXXX_Large"
+                android:background="@drawable/shape_round"
+                android:backgroundTint="@color/colorTrans"
+                android:padding="@dimen/padding_X_Small"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_avatar"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_below="@+id/home.ProfileInfo.Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_Default"
+            android:orientation="vertical">
+
+            <!--Nav Item Profile-->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/home.Nav.Profile"
+                style="@style/NavItemStyle"
+                android:drawableStart="@drawable/ic_nav_profile"
+                android:text="@string/profile" />
+
+            <!--Nav Item SignOut-->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/home.Nav.SignOut"
+                style="@style/NavItemStyle"
+                android:drawableStart="@drawable/ic_nav_sign_out"
+                android:text="@string/signOut" />
+
+            <!--Divider-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_Small"
+                android:background="@color/colorSmokeWhite"
+                android:layout_marginTop="@dimen/margin_XXX_Large"
+                android:layout_marginBottom="@dimen/margin_XX_Large"/>
+
+            <!--Nav Item Settings-->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/home.Nav.Settings"
+                style="@style/NavItemStyle"
+                android:drawableStart="@drawable/ic_nav_settings"
+                android:text="@string/settings" />
+
+            <!--Nav Item About-->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/home.Nav.About"
+                style="@style/NavItemStyle"
+                android:drawableStart="@drawable/ic_nav_about"
+                android:text="@string/about" />
+
+            <!--Nav Item Share-->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/home.Nav.Share"
+                style="@style/NavItemStyle"
+                android:drawableStart="@drawable/ic_nav_share"
+                android:text="@string/share" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+
+</com.google.android.material.navigation.NavigationView>

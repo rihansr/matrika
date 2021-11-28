@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.telemedicine.matrika.wiget.ArcView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_collapseMode="parallax"
+    app:shape_arc_cropDirection="outside"
+    app:shape_arc_height="@dimen/_12sdp"
+    app:shape_arc_position="top"
+    android:background="@android:color/transparent"
+    tools:context=".fragment.PhotoActionFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_XX_Large"
+        android:background="@color/activity_Background"
+        android:orientation="vertical">
+
+        <!--Title-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin_X_Large"
+            android:text="@string/chooseAction"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_Size_Small"
+            android:textAllCaps="true"
+            android:textColor="@color/font_Color_Dark"/>
+
+        <!--Actions-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
+
+            <!--Camera Option-->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/actionCamera"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_Small"
+                    android:background="@drawable/shape_round"
+                    android:clickable="false"
+                    android:focusable="false"
+                    app:srcCompat="@drawable/ic_action_camera"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:text="@string/camera"
+                    android:textColor="@color/font_Color_Gray"
+                    android:textSize="@dimen/text_Size_Small"
+                    android:textAllCaps="false"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!--gallery Option-->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/actionGallery"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_Small"
+                    android:background="@drawable/shape_round"
+                    android:clickable="false"
+                    android:focusable="false"
+                    app:srcCompat="@drawable/ic_action_gallery"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:text="@string/gallery"
+                    android:textColor="@color/font_Color_Gray"
+                    android:textSize="@dimen/text_Size_Small"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</com.telemedicine.matrika.wiget.ArcView>

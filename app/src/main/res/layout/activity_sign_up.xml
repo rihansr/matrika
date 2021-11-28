@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signUp.Root.Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/activity_Background"
+    tools:context=".activity.SignUpActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/signUp.UserType.Iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_XX_Large"
+        android:adjustViewBounds="true"
+        android:alpha=".1"
+        app:srcCompat="@drawable/ic_patient" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginTop="@dimen/margin_XX_Large">
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/signUp.Back.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="@dimen/padding_Large"
+                    android:paddingEnd="@dimen/padding_Small"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_arrow_left"
+                    android:tint="@color/icon_Color_Accent"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/signUp.UserMode.Button"
+                android:layout_width="@dimen/_172sdp"
+                android:layout_height="@dimen/_172sdp"
+                android:layout_gravity="top|end"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginEnd="@dimen/_minus56sdp"
+                android:layout_marginTop="@dimen/_minus56sdp">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:focusable="false"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="lottie/reveal.json"
+                    app:lottie_colorFilter="@color/colorReveal"
+                    app:lottie_loop="true"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/signUp.UserMode.Iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:alpha=".75"/>
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/signUp.Fragment.Container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</FrameLayout>

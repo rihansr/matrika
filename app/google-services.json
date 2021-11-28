@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "516872026221",
+    "firebase_url": "https://matrika-af9b1.firebaseio.com",
+    "project_id": "matrika-af9b1",
+    "storage_bucket": "matrika-af9b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516872026221:android:a631d51c85a6bfa6676764",
+        "android_client_info": {
+          "package_name": "com.telemedicine.matrika"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "516872026221-tqtnb6br6h6thsotc30924bj5o7leh61.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.telemedicine.matrika",
+            "certificate_hash": "1b440f489cd9451575cdc0a2dde5c890f710f852"
+          }
+        },
+        {
+          "client_id": "516872026221-2uovohun8afb6u4f33lhf2splilfiirr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.telemedicine.matrika",
+            "certificate_hash": "c1f37c67c022cd8d7af8c2d090ec31e9b4d16869"
+          }
+        },
+        {
+          "client_id": "516872026221-uam6t6ud2amt8l6viavgrn33hl6dqc5k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.telemedicine.matrika",
+            "certificate_hash": "eb50c399a5dc12fa737500beb37aedd6dae9d399"
+          }
+        },
+        {
+          "client_id": "516872026221-9cj40r025a84vugkuar1l8fhmb3tdjdi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8VX91gWSlpWVpKW1wrTSw6Z8iCTmO7nU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "516872026221-9cj40r025a84vugkuar1l8fhmb3tdjdi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/padding_XX_Large"
+    tools:paddingTop="0dp"
+    android:background="@color/activity_Background"
+    tools:context=".fragment.AllUsersFragment">
+
+    <!--Toolbar-->
+    <include layout="@layout/layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <include
+            android:id="@+id/doctors.Empty.Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            layout="@layout/layout_empty"
+            android:visibility="gone"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--Doctors-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/doctors.Doctors.Rcv"
+                style="@style/RecyclerViewStyle.Vertical"
+                android:fadingEdge="vertical"
+                android:requiresFadingEdge="vertical"
+                android:fadingEdgeLength="@dimen/fading_Edge_Length"
+                android:layout_marginTop="@dimen/margin_Medium"
+                android:paddingStart="@dimen/padding_Default"
+                android:paddingEnd="@dimen/padding_Default"
+                tools:itemCount="8"
+                tools:listitem="@layout/sample_user"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

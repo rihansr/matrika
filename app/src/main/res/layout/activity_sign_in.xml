@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signIn.Root.Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/activity_Background"
+    tools:context=".activity.SignInActivity">
+
+    <FrameLayout
+        android:id="@+id/signIn.UserMode.Button"
+        android:layout_width="@dimen/_172sdp"
+        android:layout_height="@dimen/_172sdp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginEnd="@dimen/_minus56sdp"
+        android:layout_marginTop="@dimen/_minus56sdp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:focusable="false"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="lottie/reveal.json"
+            app:lottie_colorFilter="@color/colorReveal"
+            app:lottie_loop="true"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/signIn.UserMode.Iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:alpha=".75"/>
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_XXX_Large"
+            android:layout_marginBottom="@dimen/margin_Small"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/signIn.UserType.Iv"
+                android:layout_width="@dimen/icon_Size_XXXXX_Large"
+                android:layout_height="@dimen/icon_Size_XXXXX_Large"
+                android:layout_marginBottom="@dimen/margin_X_Small"
+                android:adjustViewBounds="true"
+                android:transitionName="userTypeIcon"
+                app:srcCompat="@drawable/ic_patient"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/signIn.UserType.Tv"
+                style="@style/TitleTvStyle"
+                android:layout_gravity="center"
+                android:text="@string/patientTitle"
+                android:textSize="@dimen/text_Size_Large"
+                android:textColor="@color/font_Color_Accent"
+                android:textAllCaps="true"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/signIn.Email.Input"
+            style="@style/InputFieldStyle"
+            android:drawableStart="@drawable/ic_input_email"
+            android:hint="@string/email_Hint"
+            android:inputType="textWebEmailAddress"/>
+
+        <com.telemedicine.matrika.wiget.ClickableEditText
+            android:id="@+id/signIn.Password.Input"
+            style="@style/InputFieldStyle"
+            android:drawableStart="@drawable/ic_input_password"
+            android:drawableEnd="@drawable/ic_password_visibility_on"
+            android:hint="@string/password_Hint"
+            android:maxLength="20"
+            android:inputType="textPassword"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:gravity="center_vertical">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/signIn.RememberMe.Checkbox"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/rememberMe"
+                android:layout_marginTop="@dimen/margin_Default"
+                android:layout_marginStart="@dimen/margin_XX_Large"
+                android:layout_marginEnd="@dimen/margin_Medium"
+                android:layout_marginBottom="@dimen/margin_X_Large"
+                android:textColor="@color/font_Color_LightGray"
+                android:fontFamily="@font/oxanium_semi_bold"
+                android:textSize="@dimen/text_Size_X_Small"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/signIn.ForgotPassword.Button"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                style="@style/TitleTvStyle"
+                android:padding="@dimen/padding_Small"
+                android:layout_marginTop="@dimen/margin_Default"
+                android:layout_marginStart="@dimen/margin_Medium"
+                android:layout_marginEnd="@dimen/margin_XX_Large"
+                android:layout_marginBottom="@dimen/margin_X_Large"
+                android:text="@string/forgotPassword"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_Size_Small"
+                android:textColor="@color/font_Color_Accent"
+                android:fontFamily="@font/oxanium_semi_bold"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signIn.Login.Button"
+            style="@style/ButtonStyle"
+            android:text="@string/login"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_X_Large"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            style="@style/TitleTvStyle"
+            android:text="@string/dontHaveAccount"
+            android:textSize="@dimen/text_Size_Small"
+            android:textColor="@color/font_Color_Dark"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/oxanium_regular"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/signIn.Register.Button"
+            android:layout_width="wrap_content"
+            style="@style/TitleTvStyle"
+            android:layout_marginStart="@dimen/margin_Small"
+            android:text="@string/register"
+            android:textSize="@dimen/text_Size_Small"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/font_Color_Accent"
+            android:fontFamily="@font/oxanium_semi_bold"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

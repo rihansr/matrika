@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_Background"
+    tools:context=".activity.DoctorHomeActivity">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/home.Drawer_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        tools:openDrawer="start"
+        android:layout_marginBottom="?attr/actionBarSize">
+
+        <!--Nav Content-->
+        <include layout="@layout/layout_doctor_home_content" />
+
+        <!--Nav Menu-->
+        <include layout="@layout/layout_doctor_home_navigation" />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/home.Nav.View"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="bottom"
+        app:labelVisibilityMode="labeled"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/doctor_nav_menu" />
+
+</FrameLayout>

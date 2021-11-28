@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home.Nav.Chats"
+        android:icon="@drawable/ic_nav_chats"
+        android:title="@string/title_chats" />
+
+    <item
+        android:id="@+id/home.Nav.Patients"
+        android:icon="@drawable/ic_nav_patients"
+        android:title="@string/title_Patients" />
+
+    <item
+        android:id="@+id/home.Nav.More"
+        android:icon="@drawable/ic_nav_more"
+        android:title="@string/title_more" />
+
+</menu>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemTv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/padding_Medium"
+    android:paddingEnd="@dimen/padding_Medium"
+    tools:text="BAN +880"
+    android:textColor="@color/font_Color_Dark"
+    android:textSize="@dimen/text_Size_XX_Small"
+    android:padding="@dimen/padding_Small"
+    android:fontFamily="@font/oxanium_regular"
+    tools:context=".adapter.DistrictsAdapter"/>

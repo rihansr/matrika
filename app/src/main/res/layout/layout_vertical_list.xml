@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.recyclerview.widget.RecyclerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list.Rcv"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/RecyclerViewStyle.Vertical"
+    tools:listitem="@layout/sample_user_request"
+    tools:itemCount="9" />

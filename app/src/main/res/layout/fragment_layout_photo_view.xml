@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".fragment.PhotoViewFragment">
+
+    <!--PhotoView-->
+    <com.ortiz.touchview.TouchImageView
+        android:id="@+id/photo.Holder.Iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ic_placeholder"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="top"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/padding_Small"
+        android:paddingEnd="@dimen/padding_Small"
+        android:layout_marginTop="@dimen/margin_XX_Large">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/photo.Back.Button"
+            android:layout_width="@dimen/icon_Size_X_Large"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/padding_Default"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/ic_arrow_left" />
+
+    </RelativeLayout>
+
+</FrameLayout>

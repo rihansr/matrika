@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--icon Size-->
+    <dimen name="icon_Size_XXXXXXXX_Large">@dimen/_108sdp</dimen>
+    <dimen name="icon_Size_XXXXXXX_Large">@dimen/_96sdp</dimen>
+    <dimen name="icon_Size_XXXXXX_Large">@dimen/_88sdp</dimen>
+    <dimen name="icon_Size_XXXXX_Large">@dimen/_72sdp</dimen>
+    <dimen name="icon_Size_XXXX_Large">@dimen/_64sdp</dimen>
+    <dimen name="icon_Size_XXX_Large">@dimen/_56sdp</dimen>
+    <dimen name="icon_Size_XX_Large">@dimen/_48sdp</dimen>
+    <dimen name="icon_Size_X_Large">@dimen/_40sdp</dimen>
+    <dimen name="icon_Size_Large">@dimen/_32sdp</dimen>
+    <dimen name="icon_Size_Medium">@dimen/_28sdp</dimen>
+    <dimen name="icon_Size_Default">@dimen/_24sdp</dimen>
+    <dimen name="icon_Size_Small">@dimen/_20sdp</dimen>
+    <dimen name="icon_Size_X_Small">@dimen/_16sdp</dimen>
+    <dimen name="icon_Size_XX_Small">@dimen/_14sdp</dimen>
+    <dimen name="icon_Size_XXX_Small">@dimen/_12sdp</dimen>
+    <dimen name="icon_Size_XXXX_Small">@dimen/_10sdp</dimen>
+    <dimen name="icon_Size_XXXXX_Small">@dimen/_8sdp</dimen>
+
+    <!--Font Size-->
+    <dimen name="text_Size_XXXX_Large">@dimen/_24ssp</dimen>
+    <dimen name="text_Size_XXX_Large">@dimen/_22ssp</dimen>
+    <dimen name="text_Size_XX_Large">@dimen/_20ssp</dimen>
+    <dimen name="text_Size_X_Large">@dimen/_18ssp</dimen>
+    <dimen name="text_Size_Large">@dimen/_16ssp</dimen>
+    <dimen name="text_Size_Default">@dimen/_14ssp</dimen>
+    <dimen name="text_Size_Medium">@dimen/_13ssp</dimen>
+    <dimen name="text_Size_Small">@dimen/_12ssp</dimen>
+    <dimen name="text_Size_X_Small">@dimen/_11ssp</dimen>
+    <dimen name="text_Size_XX_Small">@dimen/_10ssp</dimen>
+    <dimen name="text_Size_XXX_Small">@dimen/_9ssp</dimen>
+    <dimen name="text_Size_XXXX_Small">@dimen/_8ssp</dimen>
+
+    <!--Margin-->
+    <dimen name="margin_XXXXXXX_Large">@dimen/_80sdp</dimen>
+    <dimen name="margin_XXXXXX_Large">@dimen/_64sdp</dimen>
+    <dimen name="margin_XXXXX_Large">@dimen/_48sdp</dimen>
+    <dimen name="margin_XXXX_Large">@dimen/_40sdp</dimen>
+    <dimen name="margin_XXX_Large">@dimen/_32sdp</dimen>
+    <dimen name="margin_XX_Large">@dimen/_24sdp</dimen>
+    <dimen name="margin_X_Large">@dimen/_16sdp</dimen>
+    <dimen name="margin_Large">@dimen/_12sdp</dimen>
+    <dimen name="margin_Default">@dimen/_10sdp</dimen>
+    <dimen name="margin_Medium">@dimen/_8sdp</dimen>
+    <dimen name="margin_Small">@dimen/_4sdp</dimen>
+    <dimen name="margin_X_Small">@dimen/_2sdp</dimen>
+    <dimen name="margin_XX_Small">@dimen/_1sdp</dimen>
+
+    <!--Padding-->
+    <dimen name="padding_XXXX_Large">@dimen/_48sdp</dimen>
+    <dimen name="padding_XXX_Large">@dimen/_32sdp</dimen>
+    <dimen name="padding_XX_Large">@dimen/_24sdp</dimen>
+    <dimen name="padding_X_Large">@dimen/_16sdp</dimen>
+    <dimen name="padding_Large">@dimen/_12sdp</dimen>
+    <dimen name="padding_Default">@dimen/_10sdp</dimen>
+    <dimen name="padding_Medium">@dimen/_8sdp</dimen>
+    <dimen name="padding_Small">@dimen/_4sdp</dimen>
+    <dimen name="padding_X_Small">@dimen/_2sdp</dimen>
+    <dimen name="padding_XX_Small">@dimen/_1sdp</dimen>
+
+    <!--Radius-->
+    <dimen name="radius_XXXX_Large">@dimen/_32sdp</dimen>
+    <dimen name="radius_XXX_Large">@dimen/_24sdp</dimen>
+    <dimen name="radius_XX_Large">@dimen/_20sdp</dimen>
+    <dimen name="radius_X_Large">@dimen/_16sdp</dimen>
+    <dimen name="radius_Large">@dimen/_12sdp</dimen>
+    <dimen name="radius_Default">@dimen/_10sdp</dimen>
+    <dimen name="radius_Medium">@dimen/_8sdp</dimen>
+    <dimen name="radius_Small">@dimen/_6sdp</dimen>
+    <dimen name="radius_X_Small">@dimen/_4sdp</dimen>
+    <dimen name="radius_XX_Small">@dimen/_2sdp</dimen>
+
+    <!--Elevation(Shadow)-->
+    <dimen name="card_Elevation_Large">@dimen/_4sdp</dimen>
+    <dimen name="card_Elevation_Medium">@dimen/_3sdp</dimen>
+    <dimen name="card_Elevation_Default">@dimen/_2sdp</dimen>
+    <dimen name="card_Elevation_Small">@dimen/_1sdp</dimen>
+
+    <!--View Size-->
+    <dimen name="view_Large">@dimen/_2sdp</dimen>
+    <dimen name="view_Small">1dp</dimen>
+    <dimen name="border_Large">@dimen/_2sdp</dimen>
+    <dimen name="border_Small">@dimen/_1sdp</dimen>
+
+    <!--Miscellaneous-->
+    <dimen name="logo_Size">@dimen/_128sdp</dimen>
+    <dimen name="marker_Size">@dimen/_64sdp</dimen>
+    <dimen name="loader_Size">@dimen/_48sdp</dimen>
+    <dimen name="snippet_Width">@dimen/_196sdp</dimen>
+    <dimen name="nav_Size">@dimen/_224sdp</dimen>
+    <dimen name="coverPhoto_size">@dimen/_176sdp</dimen>
+    <dimen name="fading_Edge_Length">@dimen/_12sdp</dimen>
+    <dimen name="shimmer_Space_Height">@dimen/_30sdp</dimen>
+    <dimen name="button_Width_Small">@dimen/_128sdp</dimen>
+    <dimen name="button_Height_Small">@dimen/_32sdp</dimen>
+    <dimen name="shadow_Height">@dimen/_2sdp</dimen>
+
+</resources>

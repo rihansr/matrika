@@ -1,0 +1,380 @@
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_Background"
+    android:paddingTop="@dimen/padding_XX_Large"
+    tools:paddingTop="0dp"
+    android:orientation="vertical"
+    tools:context=".fragment.SettingsFragment">
+
+    <!--Toolbar-->
+    <include layout="@layout/layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <!--Settings-->
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_minus6sdp"
+        android:paddingTop="@dimen/padding_Medium"
+        android:paddingBottom="@dimen/padding_Large"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:overScrollMode="never">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--Profile Information-->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_Default"
+                android:paddingStart="@dimen/padding_Large"
+                android:paddingEnd="@dimen/padding_Large"
+                android:gravity="center_vertical"
+                android:layout_alignParentTop="true">
+
+                <!--Profile Photo-->
+                <RelativeLayout
+                    android:id="@+id/settings.PhotoHolder.Layout"
+                    android:layout_below="@+id/coverPhotoHolder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.telemedicine.matrika.wiget.CircleImageView
+                        android:id="@+id/settings.Photo.Iv"
+                        android:layout_width="@dimen/icon_Size_XX_Large"
+                        android:layout_height="@dimen/icon_Size_XX_Large"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/shape_round"
+                        android:backgroundTint="@color/colorSmokeWhite"
+                        android:clickable="false"
+                        android:focusable="false"
+                        tools:src="@drawable/ic_avatar"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/upload_ProfilePhoto"
+                        android:layout_width="@dimen/icon_Size_X_Small"
+                        android:layout_height="@dimen/icon_Size_X_Small"
+                        android:layout_gravity="bottom|end"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:layout_below="@+id/settings.Photo.Iv"
+                        android:layout_toEndOf="@+id/settings.Photo.Iv"
+                        android:layout_marginStart="@dimen/_minus16sdp"
+                        android:layout_marginTop="@dimen/_minus16sdp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/shape_round"
+                        android:backgroundTint="@color/icon_Color_Light"
+                        android:padding="@dimen/padding_X_Small"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_update_profile" />
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--Name-->
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/settings.Name.Tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_Large"
+                        android:layout_marginBottom="@dimen/margin_X_Small"
+                        android:textColor="@color/font_Color_Dark"
+                        android:textSize="@dimen/text_Size_Small"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        tools:text="Mr. User" />
+
+                    <!--Email-->
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/settings.Email.Tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_Large"
+                        android:layout_marginTop="@dimen/margin_X_Small"
+                        android:textColor="@color/font_Color_Gray"
+                        android:textSize="@dimen/text_Size_XX_Small"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        tools:text="abc123@gmail.com" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View style="@style/DividerStyle.Large"/>
+
+            <!--Permissions-->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/padding_Large"
+                android:paddingEnd="@dimen/padding_Large"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_Small"
+                    android:text="@string/permissions"
+                    android:textColor="@color/icon_Color_Gray"
+                    android:textSize="@dimen/text_Size_XXX_Small"
+                    android:textAllCaps="true"/>
+
+                <!--Location Access-->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding_Default"
+                    android:paddingBottom="@dimen/padding_Small"
+                    android:gravity="center_vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/icon_Size_Default"
+                        android:layout_height="@dimen/icon_Size_Default"
+                        android:padding="@dimen/padding_Small"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_permission_location"/>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_Large"
+                            android:layout_marginBottom="@dimen/margin_XX_Small"
+                            android:textColor="@color/font_Color_Dark"
+                            android:textSize="@dimen/text_Size_X_Small"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@string/locationAccess" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_Large"
+                            android:layout_marginTop="@dimen/margin_XX_Small"
+                            android:textColor="@color/font_Color_Gray"
+                            android:textSize="@dimen/text_Size_XXX_Small"
+                            android:text="@string/locationAccessDetails" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/settings.LocationAccess.Switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <!--Phone Call Access-->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding_Default"
+                    android:paddingBottom="@dimen/padding_Small"
+                    android:gravity="center_vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/icon_Size_Default"
+                        android:layout_height="@dimen/icon_Size_Default"
+                        android:padding="@dimen/padding_Small"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_permission_call"/>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_Large"
+                            android:layout_marginBottom="@dimen/margin_XX_Small"
+                            android:textColor="@color/font_Color_Dark"
+                            android:textSize="@dimen/text_Size_X_Small"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@string/phoneCallAccess" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_Large"
+                            android:layout_marginTop="@dimen/margin_XX_Small"
+                            android:textColor="@color/font_Color_Gray"
+                            android:textSize="@dimen/text_Size_XXX_Small"
+                            android:text="@string/phoneCallAccessDetails" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/settings.CallAccess.Switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <!--Camera Access-->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding_Default"
+                    android:paddingBottom="@dimen/padding_Small"
+                    android:gravity="center_vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/icon_Size_Default"
+                        android:layout_height="@dimen/icon_Size_Default"
+                        android:padding="@dimen/padding_Small"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_permission_camera"/>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_Large"
+                            android:layout_marginBottom="@dimen/margin_XX_Small"
+                            android:textColor="@color/font_Color_Dark"
+                            android:textSize="@dimen/text_Size_X_Small"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@string/cameraAccess" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_Large"
+                            android:layout_marginTop="@dimen/margin_XX_Small"
+                            android:textColor="@color/font_Color_Gray"
+                            android:textSize="@dimen/text_Size_XXX_Small"
+                            android:text="@string/cameraAccessDetails" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/settings.CameraAccess.Switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <!--Gallery Access-->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding_Default"
+                    android:paddingBottom="@dimen/padding_Small"
+                    android:gravity="center_vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/icon_Size_Default"
+                        android:layout_height="@dimen/icon_Size_Default"
+                        android:padding="@dimen/padding_Small"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_permission_gallery"/>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_Large"
+                            android:layout_marginBottom="@dimen/margin_XX_Small"
+                            android:textColor="@color/font_Color_Dark"
+                            android:textSize="@dimen/text_Size_X_Small"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@string/galleryAccess" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_Large"
+                            android:layout_marginTop="@dimen/margin_XX_Small"
+                            android:textColor="@color/font_Color_Gray"
+                            android:textSize="@dimen/text_Size_XXX_Small"
+                            android:text="@string/galleryAccessDetails" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/settings.GalleryAccess.Switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View style="@style/DividerStyle.Large"/>
+
+            <!--Preferences-->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/padding_Large"
+                android:paddingEnd="@dimen/padding_Large"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_Small"
+                    android:text="@string/preferences"
+                    android:textColor="@color/icon_Color_Gray"
+                    android:textSize="@dimen/text_Size_XXX_Small"
+                    android:textAllCaps="true"/>
+
+                <!--Notifications-->
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/settings.AllowNotification.Switch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_Default"
+                    android:layout_marginBottom="@dimen/margin_Small"
+                    android:paddingStart="@dimen/padding_Small"
+                    android:drawableStart="@drawable/ic_settings_notification"
+                    android:drawablePadding="@dimen/_18sdp"
+                    android:textColor="@color/font_Color_Dark"
+                    android:textSize="@dimen/text_Size_X_Small"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/allowNotifications"
+                    tools:ignore="RtlSymmetry"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

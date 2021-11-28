@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/padding_XX_Small"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragment.NavPatientsFragment">
+
+    <include
+        android:id="@+id/patients.Empty.Layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/layout_empty"
+        android:visibility="gone"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/patients.Tab"
+        app:tabTextAppearance="@style/TabTextAppearance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_Medium"
+        android:layout_marginStart="@dimen/margin_XX_Large"
+        android:layout_marginEnd="@dimen/margin_XX_Large"
+        android:layout_marginBottom="@dimen/margin_Medium"
+        app:tabTextColor="@color/font_Color_Gray"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        app:tabBackground="@drawable/tab_selector"
+        app:tabSelectedTextColor="@color/font_Color_Dark"
+        app:tabIndicatorHeight="0dp"
+        app:elevation="0dp"
+        app:tabRippleColor="@android:color/transparent">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Requests"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/patients"
+            tools:ignore="HardcodedText" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/patients.Refresh.Layout"
+        android:layout_below="@+id/patients.Tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/patients.Fragment.Container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>
